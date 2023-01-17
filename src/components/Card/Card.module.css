@@ -1,0 +1,99 @@
+.card {
+    width: 320px;
+    height: 520px;
+    color: #000;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+}
+
+.info {
+    padding: 22px 51px;
+    position: absolute;
+}
+
+.tagline {
+    margin: 0;
+    color: #666666;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 4px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.with {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.description {
+    width: 140px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+    margin: 0;
+}
+
+.weight {
+    box-sizing: border-box;
+    padding-top: 18px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    margin-top: 388px;
+    margin-left: 225px;
+    z-index: 2;
+}
+
+.weight h1 {
+    font-size: 42px;
+    line-height: 22px;
+    margin: 0;
+    margin-bottom: 7px;
+    font-weight: 400;
+}
+
+.weight p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+img {
+    margin-left: 4px;
+    margin-top: 201px;
+    z-index: 1;
+}
+
+.bottomText {
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.bottomText span {
+    color: #2EA8E6;
+    border-bottom: 1px dashed #2EA8E6;
+}
