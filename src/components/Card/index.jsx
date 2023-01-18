@@ -2,7 +2,6 @@ import React from "react"
 import styles from './Card.module.css'
 export default function Card({
     active,
-    selected,
     tag,
     title,
     taste,
@@ -11,11 +10,14 @@ export default function Card({
     present,
     bottomText
 }) {
+    const [selected, setSelected] = React.useState(false)
+    const [hover, setHover] = React.useState(false)
+
     return (
         <>
-            <div style={selected ? { backgroundImage: 'url("./img/activeCardBack.svg")'} : !active ? { backgroundImage: 'url("./img/disableCardBack.svg")'} : { backgroundImage: 'url("./img/CardBack.svg")'}} className={styles.card}>
+            <div onMouseLeave={() => selected && setHover(false)} onMouseEnter={() => selected && setHover(true)} onClick={()=> {active && setSelected(!selected); setHover(false)}} style={selected ? { backgroundImage: 'url("./img/activeCardBack.svg")'} : !active ? { backgroundImage: 'url("./img/disableCardBack.svg")'} : { backgroundImage: 'url("./img/CardBack.svg")'}} className={styles.card}>
                 <div style={active? {opacity: "1"}: {opacity: "0.2"}} className={styles.info}>
-                    <p className={styles.tagline}>{tag}</p>
+                    <p style={hover ? {color: "#D91667"} : { color: "#666666"}} className={styles.tagline}>{hover ? "Котэ не доволен?" :tag}</p>
                     <h1 className={styles.title}>{title}</h1>
                     <h3 className={styles.with}>{taste}</h3>
                     <p className={styles.description}>{porc}</p>

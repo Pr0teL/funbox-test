@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Trebuchet MS';
     font-style: normal;
+    cursor: pointer;
 }
 
 .info {
@@ -15,8 +16,6 @@
 
 .tagline {
     margin: 0;
-    color: #666666;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
